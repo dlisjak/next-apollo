@@ -16,7 +16,19 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/about": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/categories": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/products": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
