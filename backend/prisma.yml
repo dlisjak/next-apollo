@@ -1,0 +1,6 @@
+endpoint: https://lisjak-ecomm-97b1dc3f2d.herokuapp.com/lion/dev
+datamodel: datamodel.prisma
+
+generate:
+  - generator: javascript-client
+    output: ./generated/prisma-client/
