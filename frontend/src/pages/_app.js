@@ -1,6 +1,8 @@
 import React from 'react'
 import App from 'next/app'
 
+import '../css/global/styles.scss'
+
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for
   // every single page in your application. This disables the ability to

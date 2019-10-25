@@ -101,7 +101,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2068,37 +2068,61 @@ const Nav = () => {
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, __jsx("a", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: undefined
-  }, "Home"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/products",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, __jsx("a", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: undefined
-  }, "All products"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "All products")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/categories",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }, __jsx("a", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: undefined
-  }, "Categories"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "Categories")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: undefined
+  }, __jsx("a", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: undefined
-  }, "About")));
+  }, "About"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
@@ -2303,12 +2327,11 @@ function createApolloClient(initialState = {}) {
 /*!****************************!*\
   !*** ./src/pages/index.js ***!
   \****************************/
-/*! exports provided: ALL_ITEMS_QUERY, default */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ALL_ITEMS_QUERY", function() { return ALL_ITEMS_QUERY; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! graphql-tag */ "graphql-tag");
@@ -2326,47 +2349,27 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Index = () => {
-  const {
-    loading,
-    error,
-    data
-  } = Object(_apollo_react_hooks__WEBPACK_IMPORTED_MODULE_3__["useQuery"])(ALL_ITEMS_QUERY, {
-    // Setting this value to true will make the component rerender when
-    // the "networkStatus" changes, so we are able to know if it is fetching
-    // more data
-    notifyOnNetworkStatusChange: true
-  });
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: "Home",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 8
     },
     __self: undefined
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 9
     },
     __self: undefined
   }, "Hello world"));
 };
 
-const ALL_ITEMS_QUERY = graphql_tag__WEBPACK_IMPORTED_MODULE_1___default.a`
-  query {
-    items {
-      id
-      name
-      price
-      imageUrl
-    }
-  }
-`;
-/* harmony default export */ __webpack_exports__["default"] = (Object(_lib_apollo__WEBPACK_IMPORTED_MODULE_2__["withApollo"])(Index));
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!**********************************!*\
   !*** multi ./src/pages/index.js ***!
   \**********************************/

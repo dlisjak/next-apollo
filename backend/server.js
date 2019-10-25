@@ -1,5 +1,6 @@
 const { GraphQLServer } = require('graphql-yoga');
 const { prisma } = require('./generated/prisma-client');
+const cors = require('cors');
 
 const typeDefs = `
 type Collection {
@@ -50,9 +51,19 @@ const server = new GraphQLServer({
   }
 });
 
+server.express.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
+  );
+  next();
+});
+
 const options = {
   cors: {
-    origin: ['http://localhost:3000']
+    credentials: true,
+    origin: ["http://localhost:3000"] // your frontend url.
   },
   endpoint: '/graphql',
 }

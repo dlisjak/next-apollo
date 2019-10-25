@@ -982,17 +982,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "./
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/define-properties */ "./node_modules/core-js/library/fn/object/define-properties.js");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
@@ -1001,17 +990,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "./node_modules/core-js/library/fn/object/define-property.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/freeze */ "./node_modules/core-js/library/fn/object/freeze.js");
 
 /***/ }),
 
@@ -1547,36 +1525,6 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   }
 
   return target;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js ***!
-  \**********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _taggedTemplateLiteral; });
-/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
-/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/freeze */ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js");
-/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__);
-
-
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
-
-  return _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default()(strings, {
-    raw: {
-      value: _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(raw)
-    }
-  }));
 }
 
 /***/ }),
@@ -7264,22 +7212,6 @@ module.exports = function create(P, D) {
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/fn/object/define-properties.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/define-properties.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.define-properties */ "./node_modules/core-js/library/modules/es6.object.define-properties.js");
-var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
-module.exports = function defineProperties(T, D) {
-  return $Object.defineProperties(T, D);
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/fn/object/define-property.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/define-property.js ***!
@@ -7292,19 +7224,6 @@ var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/cor
 module.exports = function defineProperty(it, key, desc) {
   return $Object.defineProperty(it, key, desc);
 };
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/freeze.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/freeze.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.freeze */ "./node_modules/core-js/library/modules/es6.object.freeze.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.freeze;
 
 
 /***/ }),
@@ -10023,20 +9942,6 @@ $export($export.S, 'Object', { create: __webpack_require__(/*! ./_object-create 
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/es6.object.define-properties.js":
-/*!******************************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.define-properties.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-// 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
-$export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js"), 'Object', { defineProperties: __webpack_require__(/*! ./_object-dps */ "./node_modules/core-js/library/modules/_object-dps.js") });
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/modules/es6.object.define-property.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.define-property.js ***!
@@ -10047,26 +9952,6 @@ $export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./no
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
 // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
 $export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js"), 'Object', { defineProperty: __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.freeze.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.freeze.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.5 Object.freeze(O)
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-var meta = __webpack_require__(/*! ./_meta */ "./node_modules/core-js/library/modules/_meta.js").onFreeze;
-
-__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('freeze', function ($freeze) {
-  return function freeze(it) {
-    return $freeze && isObject(it) ? $freeze(meta(it)) : it;
-  };
-});
 
 
 /***/ }),
@@ -23157,37 +23042,61 @@ var Nav = function Nav() {
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx("a", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, "Home"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "Home")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/products",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx("a", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, "All products"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "All products")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/categories",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, __jsx("a", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }, "Categories"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "Categories")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, __jsx("a", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }, "About")));
+  }, "About"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
@@ -23438,73 +23347,48 @@ function createApolloClient() {
 /*!****************************!*\
   !*** ./src/pages/index.js ***!
   \****************************/
-/*! exports provided: ALL_ITEMS_QUERY, default */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ALL_ITEMS_QUERY", function() { return ALL_ITEMS_QUERY; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! graphql-tag */ "./node_modules/graphql-tag/src/index.js");
-/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _lib_apollo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../lib/apollo */ "./src/lib/apollo.js");
-/* harmony import */ var _apollo_react_hooks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @apollo/react-hooks */ "./node_modules/@apollo/react-hooks/lib/react-hooks.esm.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout/index.js");
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! graphql-tag */ "./node_modules/graphql-tag/src/index.js");
+/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _lib_apollo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../lib/apollo */ "./src/lib/apollo.js");
+/* harmony import */ var _apollo_react_hooks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @apollo/react-hooks */ "./node_modules/@apollo/react-hooks/lib/react-hooks.esm.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout/index.js");
 var _jsxFileName = "C:\\Users\\domen.lisjak\\projects\\next-apollo\\frontend\\src\\pages\\index.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  query {\n    items {\n      id\n      name\n      price\n      imageUrl\n    }\n  }\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
-
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
 
 var Index = function Index() {
-  var _useQuery = Object(_apollo_react_hooks__WEBPACK_IMPORTED_MODULE_4__["useQuery"])(ALL_ITEMS_QUERY, {
-    // Setting this value to true will make the component rerender when
-    // the "networkStatus" changes, so we are able to know if it is fetching
-    // more data
-    notifyOnNetworkStatusChange: true
-  }),
-      loading = _useQuery.loading,
-      error = _useQuery.error,
-      data = _useQuery.data;
-
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: "Home",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 8
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 9
     },
     __self: this
   }, "Hello world"));
 };
 
-var ALL_ITEMS_QUERY = graphql_tag__WEBPACK_IMPORTED_MODULE_2___default()(_templateObject());
-/* harmony default export */ __webpack_exports__["default"] = (Object(_lib_apollo__WEBPACK_IMPORTED_MODULE_3__["withApollo"])(Index));
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 0:
+/***/ 4:
 /*!*********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Cdomen.lisjak%5Cprojects%5Cnext-apollo%5Cfrontend%5Csrc%5Cpages%5Cindex.js ***!
   \*********************************************************************************************************************************************************/
@@ -23527,5 +23411,5 @@ module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

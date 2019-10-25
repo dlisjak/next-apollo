@@ -1703,6 +1703,17 @@ function createUrl(router) {
 
 /***/ }),
 
+/***/ "./src/css/global/styles.scss":
+/*!************************************!*\
+  !*** ./src/css/global/styles.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/pages/_app.js":
 /*!***************************!*\
   !*** ./src/pages/_app.js ***!
@@ -1717,9 +1728,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _css_global_styles_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/global/styles.scss */ "./src/css/global/styles.scss");
+/* harmony import */ var _css_global_styles_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_global_styles_scss__WEBPACK_IMPORTED_MODULE_3__);
 
 var _jsxFileName = "C:\\Users\\domen.lisjak\\projects\\next-apollo\\frontend\\src\\pages\\_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 
 
@@ -1743,7 +1757,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_2___default.a {
     return __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 22
       },
       __self: this
     }));

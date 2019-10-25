@@ -8866,6 +8866,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _css_global_styles_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../css/global/styles.scss */ "./src/css/global/styles.scss");
+/* harmony import */ var _css_global_styles_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_css_global_styles_scss__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
@@ -8874,6 +8876,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "C:\\Users\\domen.lisjak\\projects\\next-apollo\\frontend\\src\\pages\\_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement;
+
 
 
 
@@ -8908,7 +8911,7 @@ function (_App) {
       return __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 22
         },
         __self: this
       }));
@@ -8933,5 +8936,5 @@ module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[["./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js!./","static/runtime/webpack.js"]]]);
+},[["./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js!./","static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=_app.js.map
