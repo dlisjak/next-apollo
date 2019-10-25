@@ -15,6 +15,7 @@ type Item {
   collection: Collection
 }
 type Query {
+  items: [Item!]!
   collections: [Collection!]!
   collection(id: ID!): Collection
   getCollectionsByTitle(title: String): Collection
@@ -23,6 +24,7 @@ type Query {
 
 const resolvers = {
   Query: {
+    items: (root, args, ctx, info) => ctx.prisma.items({}, info),
     collections: (root, args, ctx, info) => ctx.prisma.collections({}, info),
     collection: (root, { id }, ctx) => ctx.prisma.collection({ id }),
     getCollectionsByTitle: (root, { title }, ctx) =>
@@ -48,11 +50,11 @@ const server = new GraphQLServer({
   }
 });
 
-server.start(
-  {
-    cors: {
-      origin: ['http://localhost:3000']
-    }
+const options = {
+  cors: {
+    origin: ['http://localhost:3000']
   },
-  () => console.log('Server is running on http://localhost:4000')
-);
+  endpoint: '/graphql',
+}
+
+server.start(options, ({ port, endpoint }) => console.log(`running on http://localhost:${port}${endpoint}`));
