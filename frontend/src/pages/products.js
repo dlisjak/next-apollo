@@ -1,7 +1,6 @@
 import gql from 'graphql-tag';
 import { withApollo } from '../lib/apollo';
 import { useQuery } from '@apollo/react-hooks';
-import Layout from '../components/Layout'
 
 import '../css/products/products.scss';
 
@@ -12,9 +11,13 @@ const Products = () => {
       // Setting this value to true will make the component rerender when
       // the "networkStatus" changes, so we are able to know if it is fetching
       // more data
-      notifyOnNetworkStatusChange: false
+      notifyOnNetworkStatusChange: true
     }
   )
+
+  console.log({loading})
+  console.log({error})
+  console.log({data})
 
   return (
     <>

@@ -11515,18 +11515,17 @@ function (_App) {
           Component = _this$props.Component,
           pageProps = _this$props.pageProps;
       var title = Component.displayName && Component.displayName.includes('withApollo') ? Component.displayName.replace('withApollo(', '').replace(')', '') : Component.name;
-      console.log(this.props);
       return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_11__["default"], {
         title: title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 26
         },
         __self: this
       }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_3__["default"])({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 27
         },
         __self: this
       })));

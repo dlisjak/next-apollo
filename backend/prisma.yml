@@ -1,5 +1,6 @@
 endpoint: https://lisjak-ecomm-97b1dc3f2d.herokuapp.com/lion/dev
 datamodel: datamodel.prisma
+secret: somepass
 
 generate:
   - generator: javascript-client

@@ -22,7 +22,6 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props
     const title = Component.displayName && Component.displayName.includes('withApollo') ? (Component.displayName.replace('withApollo(', '')).replace(')', '') : Component.name;
-    console.log(this.props)
     return (
       <Layout title={title}>
         <Component {...pageProps} />

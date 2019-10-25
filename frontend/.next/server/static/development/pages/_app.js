@@ -2374,18 +2374,17 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_3___default.a {
       pageProps
     } = this.props;
     const title = Component.displayName && Component.displayName.includes('withApollo') ? Component.displayName.replace('withApollo(', '').replace(')', '') : Component.name;
-    console.log(this.props);
     return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
       title: title,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 26
       },
       __self: this
     }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 27
       },
       __self: this
     })));
