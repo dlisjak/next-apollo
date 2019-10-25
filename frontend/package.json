@@ -4,8 +4,16 @@
   "description": "Next.js Apollo",
   "main": "index.js",
   "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Domen Lisjak",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "next": "^9.1.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
 }
