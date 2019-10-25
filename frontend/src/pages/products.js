@@ -16,10 +16,8 @@ const Products = () => {
     }
   )
 
-  console.log(data);
-
   return (
-    <Layout title="Products">
+    <>
       <h1>Products</h1>
       <div className="flex flex-wrap products">
       {data && data.items.map(({ id, name, price, imageUrl }) => {
@@ -32,7 +30,7 @@ const Products = () => {
         );
       })}
       </div>
-    </Layout>
+    </>
   )
 };
 

@@ -7,7 +7,9 @@ const Layout = ({ title, children }) => (
       <title>{title} | Next Apollo Example</title>
     </Head>
     <Nav />
-    {children}
+    <div className="content">
+      {children}
+    </div>
   </>
 );
 

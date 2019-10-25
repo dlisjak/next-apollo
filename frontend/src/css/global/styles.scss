@@ -1,40 +1,14 @@
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
 img {
   width: 100%;
   height: auto;
 }
 
-.flex {
-  display: flex;
-
-  &.flex-column {
-    flex-direction: column;
-  }
-
-  &.flex-wrap {
-    flex-wrap: wrap;
-  }
-
-  &.align {
-    &-center {
-      align-items: center;
-    }
-    &-start {
-      align-items: flex-start;
-    }
-    &-end {
-      align-items: flex-end;
-    }
-  }
-
-  &.justify {
-    &-center {
-      justify-content: center;
-    }
-    &-start {
-      justify-content: flex-start;
-    }
-    &-end {
-      justify-content: flex-end;
-    }
-  }
+.content {
+  margin: 0 auto;
+  max-width: 80rem;
 }

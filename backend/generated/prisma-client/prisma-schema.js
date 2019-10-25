@@ -23,6 +23,7 @@ type Collection {
   id: ID!
   title: String!
   items(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Item!]
+  featuredImage: String!
 }
 
 type CollectionConnection {
@@ -32,8 +33,10 @@ type CollectionConnection {
 }
 
 input CollectionCreateInput {
+  id: ID
   title: String!
   items: ItemCreateManyWithoutCollectionInput
+  featuredImage: String!
 }
 
 input CollectionCreateOneWithoutItemsInput {
@@ -42,7 +45,9 @@ input CollectionCreateOneWithoutItemsInput {
 }
 
 input CollectionCreateWithoutItemsInput {
+  id: ID
   title: String!
+  featuredImage: String!
 }
 
 type CollectionEdge {
@@ -55,11 +60,14 @@ enum CollectionOrderByInput {
   id_DESC
   title_ASC
   title_DESC
+  featuredImage_ASC
+  featuredImage_DESC
 }
 
 type CollectionPreviousValues {
   id: ID!
   title: String!
+  featuredImage: String!
 }
 
 type CollectionSubscriptionPayload {
@@ -83,10 +91,12 @@ input CollectionSubscriptionWhereInput {
 input CollectionUpdateInput {
   title: String
   items: ItemUpdateManyWithoutCollectionInput
+  featuredImage: String
 }
 
 input CollectionUpdateManyMutationInput {
   title: String
+  featuredImage: String
 }
 
 input CollectionUpdateOneWithoutItemsInput {
@@ -100,6 +110,7 @@ input CollectionUpdateOneWithoutItemsInput {
 
 input CollectionUpdateWithoutItemsDataInput {
   title: String
+  featuredImage: String
 }
 
 input CollectionUpsertWithoutItemsInput {
@@ -139,6 +150,20 @@ input CollectionWhereInput {
   items_every: ItemWhereInput
   items_some: ItemWhereInput
   items_none: ItemWhereInput
+  featuredImage: String
+  featuredImage_not: String
+  featuredImage_in: [String!]
+  featuredImage_not_in: [String!]
+  featuredImage_lt: String
+  featuredImage_lte: String
+  featuredImage_gt: String
+  featuredImage_gte: String
+  featuredImage_contains: String
+  featuredImage_not_contains: String
+  featuredImage_starts_with: String
+  featuredImage_not_starts_with: String
+  featuredImage_ends_with: String
+  featuredImage_not_ends_with: String
   AND: [CollectionWhereInput!]
   OR: [CollectionWhereInput!]
   NOT: [CollectionWhereInput!]
@@ -164,6 +189,7 @@ type ItemConnection {
 }
 
 input ItemCreateInput {
+  id: ID
   name: String!
   imageUrl: String!
   price: Float!
@@ -176,6 +202,7 @@ input ItemCreateManyWithoutCollectionInput {
 }
 
 input ItemCreateWithoutCollectionInput {
+  id: ID
   name: String!
   imageUrl: String!
   price: Float!
@@ -463,6 +490,7 @@ type UserConnection {
 }
 
 input UserCreateInput {
+  id: ID
   name: String!
 }
 

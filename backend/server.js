@@ -1,12 +1,12 @@
 const { GraphQLServer } = require('graphql-yoga');
 const { prisma } = require('./generated/prisma-client');
-const cors = require('cors');
 
 const typeDefs = `
 type Collection {
   id: ID!
   title: String!
   items: [Item!]!
+  featuredImage: String!
 }
 type Item {
   id: ID!

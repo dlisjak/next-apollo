@@ -193,7 +193,9 @@ export type CollectionOrderByInput =
   | "id_ASC"
   | "id_DESC"
   | "title_ASC"
-  | "title_DESC";
+  | "title_DESC"
+  | "featuredImage_ASC"
+  | "featuredImage_DESC";
 
 export type UserOrderByInput = "id_ASC" | "id_DESC" | "name_ASC" | "name_DESC";
 
@@ -202,6 +204,7 @@ export type MutationType = "CREATED" | "UPDATED" | "DELETED";
 export interface CollectionUpdateInput {
   title?: Maybe<String>;
   items?: Maybe<ItemUpdateManyWithoutCollectionInput>;
+  featuredImage?: Maybe<String>;
 }
 
 export type CollectionWhereUniqueInput = AtLeastOne<{
@@ -247,6 +250,20 @@ export interface CollectionWhereInput {
   items_every?: Maybe<ItemWhereInput>;
   items_some?: Maybe<ItemWhereInput>;
   items_none?: Maybe<ItemWhereInput>;
+  featuredImage?: Maybe<String>;
+  featuredImage_not?: Maybe<String>;
+  featuredImage_in?: Maybe<String[] | String>;
+  featuredImage_not_in?: Maybe<String[] | String>;
+  featuredImage_lt?: Maybe<String>;
+  featuredImage_lte?: Maybe<String>;
+  featuredImage_gt?: Maybe<String>;
+  featuredImage_gte?: Maybe<String>;
+  featuredImage_contains?: Maybe<String>;
+  featuredImage_not_contains?: Maybe<String>;
+  featuredImage_starts_with?: Maybe<String>;
+  featuredImage_not_starts_with?: Maybe<String>;
+  featuredImage_ends_with?: Maybe<String>;
+  featuredImage_not_ends_with?: Maybe<String>;
   AND?: Maybe<CollectionWhereInput[] | CollectionWhereInput>;
   OR?: Maybe<CollectionWhereInput[] | CollectionWhereInput>;
   NOT?: Maybe<CollectionWhereInput[] | CollectionWhereInput>;
@@ -280,7 +297,9 @@ export interface ItemUpsertWithWhereUniqueWithoutCollectionInput {
 }
 
 export interface CollectionCreateWithoutItemsInput {
+  id?: Maybe<ID_Input>;
   title: String;
+  featuredImage: String;
 }
 
 export interface UserSubscriptionWhereInput {
@@ -321,12 +340,15 @@ export interface UserUpdateInput {
 }
 
 export interface UserCreateInput {
+  id?: Maybe<ID_Input>;
   name: String;
 }
 
 export interface CollectionCreateInput {
+  id?: Maybe<ID_Input>;
   title: String;
   items?: Maybe<ItemCreateManyWithoutCollectionInput>;
+  featuredImage: String;
 }
 
 export interface CollectionUpsertWithoutItemsInput {
@@ -343,9 +365,11 @@ export interface ItemCreateManyWithoutCollectionInput {
 
 export interface CollectionUpdateWithoutItemsDataInput {
   title?: Maybe<String>;
+  featuredImage?: Maybe<String>;
 }
 
 export interface ItemCreateWithoutCollectionInput {
+  id?: Maybe<ID_Input>;
   name: String;
   imageUrl: String;
   price: Float;
@@ -409,6 +433,7 @@ export interface ItemWhereInput {
 }
 
 export interface ItemCreateInput {
+  id?: Maybe<ID_Input>;
   name: String;
   imageUrl: String;
   price: Float;
@@ -511,6 +536,7 @@ export interface ItemUpdateManyDataInput {
 
 export interface CollectionUpdateManyMutationInput {
   title?: Maybe<String>;
+  featuredImage?: Maybe<String>;
 }
 
 export interface ItemUpdateWithWhereUniqueWithoutCollectionInput {
@@ -834,6 +860,7 @@ export interface UserNullablePromise
 export interface CollectionPreviousValues {
   id: ID_Output;
   title: String;
+  featuredImage: String;
 }
 
 export interface CollectionPreviousValuesPromise
@@ -841,6 +868,7 @@ export interface CollectionPreviousValuesPromise
     Fragmentable {
   id: () => Promise<ID_Output>;
   title: () => Promise<String>;
+  featuredImage: () => Promise<String>;
 }
 
 export interface CollectionPreviousValuesSubscription
@@ -848,6 +876,7 @@ export interface CollectionPreviousValuesSubscription
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
   title: () => Promise<AsyncIterator<String>>;
+  featuredImage: () => Promise<AsyncIterator<String>>;
 }
 
 export interface CollectionSubscriptionPayload {
@@ -944,6 +973,7 @@ export interface AggregateItemSubscription
 export interface Collection {
   id: ID_Output;
   title: String;
+  featuredImage: String;
 }
 
 export interface CollectionPromise extends Promise<Collection>, Fragmentable {
@@ -958,6 +988,7 @@ export interface CollectionPromise extends Promise<Collection>, Fragmentable {
     first?: Int;
     last?: Int;
   }) => T;
+  featuredImage: () => Promise<String>;
 }
 
 export interface CollectionSubscription
@@ -974,6 +1005,7 @@ export interface CollectionSubscription
     first?: Int;
     last?: Int;
   }) => T;
+  featuredImage: () => Promise<AsyncIterator<String>>;
 }
 
 export interface CollectionNullablePromise
@@ -990,6 +1022,7 @@ export interface CollectionNullablePromise
     first?: Int;
     last?: Int;
   }) => T;
+  featuredImage: () => Promise<String>;
 }
 
 export interface UserEdge {

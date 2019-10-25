@@ -1,16 +1,17 @@
 type User {
-  id: ID! @unique
+  id: ID! @id
   name: String!
 }
 
 type Collection {
-  id: ID! @unique
+  id: ID! @id
   title: String! @unique
   items: [Item!]!
+  featuredImage: String!
 }
 
 type Item {
-  id: ID! @unique
+  id: ID! @id
   name: String!
   imageUrl: String!
   price: Float!
